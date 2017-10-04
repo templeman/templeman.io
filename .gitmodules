@@ -1,0 +1,8 @@
+[submodule "themes/minimal"]
+	path = themes/minimal
+	url = https://github.com/calintat/minimal.git
+  ignore = dirty
+[submodule "themes/cactus"]
+	path = themes/cactus
+	url = https://github.com/digitalcraftsman/hugo-cactus-theme.git
+  ignore = dirty

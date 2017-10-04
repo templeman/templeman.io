@@ -1,7 +1,9 @@
 # Site settings
 baseurl = "https://templeman.io/"
+themesDir = "themes"
 languageCode = "en-us"
 title = "Templeman Creative"
+theme = "cactus"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
