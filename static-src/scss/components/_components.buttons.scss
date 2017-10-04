@@ -1,0 +1,109 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * A button component.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$btn-padding:         $unit;
+$btn-padding--small:  ($btn-padding)/2;
+$btn-padding--large:  ($btn-padding)*2;
+$btn-background:      $color-razzmatazz;
+$btn-color:           $color-white;
+$btn-border-width:    0;
+$btn-border-style:    solid;
+$btn-border-color:    $btn-background;
+$btn-radius:          $global-radius;
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin:  0; /* [4] */
+  cursor: pointer; /* [5] */
+  overflow: visible; /* [6] */
+  padding: $btn-padding--small/2 - $btn-border-width  ($btn-padding)*2 - $btn-border-width; /* [7] */
+  background-color: $btn-background;
+  @include font-size(18px);
+  @include font-weight(semibold);
+  @include font-family(sans-serif);
+  @include antialias();
+
+  @if($btn-border-width != 0) {
+    border: $btn-border-width $btn-border-style $btn-border-color;
+  } @else {
+    border: none; /* [4] */
+    @include attention() {
+      border: none; /* [4] */
+    }
+  }
+
+  @if($btn-radius != 0) {
+    border-radius: $btn-radius;
+  }
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none; /* [4] */
+    color: $btn-color;
+  }
+
+}
+
+.btn {
+    // @include font-weight(bold);
+    // @include vendor(transition, 0.2s);
+
+    // @include attention() {
+    //     background-color: darken($color-btn, 10%);
+    //         border-color: darken($color-btn, 10%);
+    // }
+
+}
+
+.c-btn--secondary {
+    background: none;
+    color: $btn-color;
+
+    @include attention() {
+        background: none;
+        color: darken($btn-color, 10%);
+    }
+
+}
+
+// .btn--positive {
+//     @include font-weight(regular);
+//
+//     @include attention(self) {
+//         background-color: $color-positive;
+//             border-color: $color-positive;
+//     }
+//
+// }
+
+//.btn--negative {
+//    @include font-weight(regular);
+//
+//    @include attention(self) {
+//        background-color: $color-negative;
+//            border-color: $color-negative;
+//    }
+//
+//}

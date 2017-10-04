@@ -1,0 +1,108 @@
+/* ==========================================================================
+   #SITE-NAV
+   ========================================================================== */
+
+
+.headroom {
+  background-color: $color-violet;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  transition: $global-transition;
+  z-index: 1000;
+}
+
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+
+.c-site-nav-head {
+  @include font-family(sans-serif);
+  text-transform: uppercase;
+  // letter-spacing: 0.1em;
+  @include font-size(20px);
+  @include mq($from: tablet) {
+    text-align: right;
+  }
+  padding: $unit-large 0;
+}
+
+
+  .c-site-nav-head__home-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto $unit-large;
+    @include mq($from: tablet) {
+      float: left;
+      margin: 0;
+    }
+  }
+
+
+  .c-site-nav-head__list {
+    display: flex;
+    justify-content: space-evenly;
+    @include mq($from: tablet) {
+      display: inline-block;
+    }
+    list-style: none;
+    margin: 0;
+  }
+
+    .c-site-nav-head__item {
+      @include mq($from: tablet) {
+        float: left;
+        &:not(:last-child) {
+          margin-right: $unit/2;
+        }
+      }
+    }
+
+      .c-site-nav-head__link {
+        @include font-weight(bold);
+        letter-spacing: 0.1em;
+        &:hover {
+          border-bottom: none;
+        }
+        @include mq($from: tablet) {
+          @include font-size(16px);
+        }
+        padding: 8px 12px;
+        color: $color-spun-pearl;
+        &.active, &:hover, &:active {
+          color: $color-white-lilac;
+        }
+      }
+
+
+
+.site-nav-foot {
+  // float: left;
+  text-align: center;
+  @include mq($from: tablet) {
+    text-align: left;
+  }
+}
+
+  .site-nav-foot__list {
+    list-style: none;
+    margin: 0;
+  }
+
+    .site-nav-foot__item {
+      float: left;
+      margin-right: $unit;
+    }
+
+      .site-nav-foot__link {
+        color: $color-violet;
+      }

@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #PAGE-HEAD
+   ========================================================================== */
+
+
+.site-header {
+  background-color: $color-violet;
+  overflow: auto;
+  @include antialias();
+  padding-top: 271px;
+  @include mq($from: tablet) {
+    padding-top: 109px;
+  }
+}

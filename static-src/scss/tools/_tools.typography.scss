@@ -1,0 +1,117 @@
+///* ========================================================================
+//   #TYPOGRAPHY
+//   ======================================================================== */
+
+/*
+ * Mixins to help generating typographical rules.
+ */
+
+
+
+
+
+/*
+ * Shorthand onto specific font-stacks.
+ */
+@mixin font-family($family) {
+
+  @if ($family == "sans-serif") {
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  @elseif ($family == "serif") {
+    font-family: 'Source Serif Pro', Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  }
+
+  @elseif ($family == "handwriting") {
+    font-family: 'Caveat', cursive;
+  }
+
+  @else {
+    @warn "#{$family} is not a valid font-family."
+  }
+
+}
+
+
+
+
+
+/*
+ * Map keywords onto our numbered weights for convenience.
+ */
+@mixin font-weight($weight) {
+
+  @if ($weight == regular) {
+    font-weight: 400;
+  }
+
+  @elseif ($weight == hairline) {
+    font-weight: 100;
+  }
+
+  @elseif ($weight == light) {
+    font-weight: 300;
+  }
+
+  @elseif ($weight == medium) {
+    font-weight: 500;
+  }
+
+  @elseif ($weight == semibold) {
+    font-weight: 600;
+  }
+
+  @elseif ($weight == bold) {
+    font-weight: 700;
+  }
+
+  @elseif ($weight == black) {
+    font-weight: 900;
+  }
+
+  @else {
+    @warn "#{$weight} is not a valid font-weight."
+  }
+
+}
+
+
+
+
+
+/*
+ * Simple truncation mixin to cut off text using an ellipsis after a certain
+ * width.
+ *
+ * .simple-usage {
+ *   @include truncate();
+ * }
+ *
+ * .detailed-usage {
+ *   @include truncate(<value>);
+ * }
+ */
+
+@mixin truncate($width: 100%) {
+  max-width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+/*
+ * This declaration should be applied intentionally, i.e., for light text on
+ * dark backgrounds. EDIT: Or should it? Many reputable sites seem to be
+ * applying this as a blanket declaration. The default is
+ * subpixel-antialiased. Use this mixin to change to "antialiased" when
+ * warranted.
+ */
+@mixin antialias() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

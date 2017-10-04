@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+/**
+ * Simple page-level setup. Extends InuitCSS defaults.
+ *
+ * 1. Suppress horizontal scrollbars for elements that we choose to push off
+ * the page.
+ */
+
+html {
+  overflow-x: hidden; /* [1] */
+}
+
+
+body {
+  @include font-family(serif);
+  color: $color-violet;
+}

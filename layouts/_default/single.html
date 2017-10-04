@@ -1,0 +1,50 @@
+{{ define "main" }}
+  <section class="o-wrapper  c-band">
+  <article class="c-post">
+    <header class="c-post__header">
+      <h2 class="c-post__title">{{ .Title }}</h2>
+      <div class="c-post__meta">
+        <time class="c-post__date">{{ .Date.Format "January 2, 2006" }}</time>
+        <br>
+        <span class="c-post__tags">{{ with .Params.tags }}
+        {{ if ge (len .) 1 }}
+          {{ range . }}
+              <a class="c-post__tag" href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>&nbsp;&nbsp;/&nbsp;
+          {{ end }}
+        {{ end }}
+        {{ end}}
+        </span>
+      </div>
+    </header>
+    <hr>
+    <section id="post-body">
+      {{ .Content }}
+    </section>
+  </article>
+  <div class="c-band  link-unique">
+    <a href="{{ "note" | absURL }}">All Notes</a>
+  </div>
+
+  {{/*
+  <footer id="post-meta" class="clearfix">
+      {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
+      <img class="avatar" src="{{ "images/avatar.png" | absURL }}">
+      <div>
+          <span class="dark">{{ .Site.Params.name }}</span>
+          <span>{{ .Site.Params.aboutAuthor }}</span>
+      </div>
+      {{ with .Site.Params.twitter }}</a>{{ end }}
+      <section id="sharing">
+          {{ partial "share.html" . }}
+      </section>
+  </footer>
+
+  {{ template "_internal/disqus.html" . }}
+
+  {{ partial "latest-posts.html" . }}
+
+  {{ partial "call-to-action.html" . }}
+  */}}
+
+  </section>
+{{ end }}

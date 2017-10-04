@@ -1,0 +1,34 @@
+%svg-common {
+	background: url("svg/sprite.css-79b1754d.svg") no-repeat;
+}
+
+.svg-circlegithubalt {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-circlegithubalt-dims {
+	width: 425px;
+	height: 512px;
+}
+
+.svg-circlelinkedin {
+	@extend %svg-common;
+	background-position: 50% 0;
+}
+
+.svg-circlelinkedin-dims {
+	width: 425px;
+	height: 512px;
+}
+
+.svg-circletwitterbird {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-circletwitterbird-dims {
+	width: 425px;
+	height: 512px;
+}
+

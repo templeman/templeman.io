@@ -1,0 +1,49 @@
+/* ==========================================================================
+   #COLORS
+   ========================================================================== */
+
+/*
+ * Set up a color palette which allows us to theme the entire project from one
+ * location.
+ */
+
+// Brand Colors
+$color-cream:         #ffeedb;
+$color-white-lilac:   #eeedf0;
+$color-downy:         #61c9a8;
+$color-spun-pearl:    #ada8b6;
+$color-razzmatazz:    #e30053;
+$color-rose:          #ff0f67;
+$color-maroon-flush:  #c42761;
+$color-violet:        #2f0531;
+$color-gray:          #333333;
+
+// $color : #a53860;
+
+// Utility
+$color-white:  #fff;
+$color-black:  #000;
+
+
+/*
+ * Slightly lighten a color
+ * @access public
+ * @param {Color} $color - color to tint
+ * @param {Number} $percentage - percentage of `$color` in returned color
+ * @return {Color}
+ */
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+
+/*
+ * Slightly darken a color
+ * @access public
+ * @param {Color} $color - color to shade
+ * @param {Number} $percentage - percentage of `$color` in returned color
+ * @return {Color}
+ */
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}

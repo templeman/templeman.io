@@ -1,0 +1,12 @@
+{{ range .Data.Pages.GroupByDate "2006" }}
+<h2 class="c-heading-sub">{{ .Key }}</h2>
+<ul class="c-post-list  o-list-bare">
+  {{ range .Pages }}
+    <li class="c-post-list__item">
+      <time class="u-hide  u-display-inline-block@tablet  c-post-list__date  c-post-list__date--full">{{ .Date.Format "January 2" }}</time>
+      <time class="u-hide@tablet  c-post-list__date  c-post-list__date--short">{{ .Date.Format "01.02" }}</time>
+      <a href='{{ .URL }}'>{{ .LinkTitle }}</a>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

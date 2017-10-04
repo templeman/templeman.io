@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #CTA
+   ========================================================================== */
+
+/**
+ * A call-to-action(CTA) component.
+ */
+
+.cta {
+  background-color: $color-white-lilac;
+  color: $color-violet;
+  text-align: center;
+  padding: $unit-huge 0;
+  h4 {
+    @include font-size(28px);
+    @include font-weight(bold);
+    text-transform: uppercase;
+    @include mq($from: tablet) {
+      @include font-size(41px);
+    }
+  }
+  p {
+    @include font-family(sans-serif);
+  }
+}

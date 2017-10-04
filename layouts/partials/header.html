@@ -1,0 +1,43 @@
+<header class="site-header">
+  <div class="headroom">
+    <div class="o-wrapper  o-wrapper--large">
+      <nav class="c-site-nav-head">
+        <!-- {{ if not .IsHome }} -->
+        <!--  <a href='{{ .Site.BaseURL }}'> <span class="arrow">←</span>{{ .Site.Params.home | default "Home" }}</a> -->
+        <!-- {{ end }} -->
+        {{ if not .IsHome }}
+          <a href="/" class="c-site-nav-head__home-link">
+            <svg class="c-site-nav-head__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.2 94.22"><title>Asset 5</title><polygon points="0 33.34 0 94.22 94.2 94.22 94.2 33.34 66.66 33.34 66.66 66.68 27.54 66.68 27.54 33.34 0 33.34" fill="#ffeedb"/><polygon points="94.2 0 0 0 0 27.54 33.33 27.54 33.33 60.88 60.87 60.88 60.87 27.54 94.2 27.54 94.2 0" fill="#e30053"/></svg>
+          </a>
+        {{ end }}
+        <ul class="c-site-nav-head__list">
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+          <li class="c-site-nav-head__item">
+            <a class="c-site-nav-head__link  {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+
+        <!-- {{ if .Site.Params.enableRSS }} -->
+        <!--  <a class="cta" href="{{ .Site.RSSLink }}">{{ .Site.Params.subscribe | default "Subscribe" }}</a> -->
+        <!-- {{ end }} -->
+      </nav>
+    </div>
+  </div>
+  <div class="c-title-page  o-wrapper">
+    {{ if .IsHome }}
+      <img src="/img/logo-templeman-creative-horizontal.svg" alt="Templeman Creative">
+    {{  end }}
+
+    {{ if and (eq .Section "note") (eq .Params.index "true") }}
+    <h1 class="c-heading-page">{{ .Title }}</h1>
+    {{ else }}
+    <h1 class="c-heading-page">{{ .Section }}</h1>
+    {{ end }}
+
+    {{ with $.Params.subtitle }}
+      <p class="c-subtitle-page">{{.}}</p>
+    {{ end }}
+  </div>
+</header>

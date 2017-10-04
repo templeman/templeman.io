@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+    <body {{ if .IsHome }} class="home" {{ else }} class="{{ .Section }}"{{ end }}>
+    {{ partial "header.html" . }}
+      <!-- {{ block "profile" . }}{{ end }} -->
+    {{ block "main" . -}}{{- end }}
+    {{ partial "call-to-action.html" . }}
+    {{ if .Site.Social }}
+      {{ partial "social-icons.html" . }}
+    {{ end }}
+    {{ partial "footer.html" . }}
+    {{ partial "js.html" . }}
+  </body>
+</html>

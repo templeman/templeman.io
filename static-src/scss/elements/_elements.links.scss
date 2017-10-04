@@ -1,0 +1,47 @@
+/* ==========================================================================
+   #LINKS
+   ========================================================================== */
+
+a {
+    text-decoration: none;
+    color: $color-razzmatazz;
+    &:hover {
+      border-bottom: 2px solid;
+    }
+    // text-decoration-skip: ink;
+
+    // @include attention() {
+    //     text-decoration: underline;
+    // }
+
+}
+
+.link-unique {
+  @include font-family(sans-serif);
+  @include font-size(13px);
+  @include font-weight(semibold);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+//.link-quiet {
+//    color: $color-gray-light;
+//    text-decoration: underline;
+//
+//    @include attention() {
+//        color: $color-links;
+//    }
+//
+//}
+
+// .link-secret {
+//     color: inherit;
+//     @include font-weight(regular);
+//
+//     @include attention() {
+//         color: $color-links;
+//         text-decoration: none;
+//     }
+//
+// }

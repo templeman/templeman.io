@@ -1,0 +1,80 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Opinionated heading styles should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/). Those
+ * classes are defined here. N.B. Because Hugo uses Markdown for rendering
+ * content, we have to resort to styling bare HTML elements for content;
+ * classes are not allowed.
+ */
+
+
+.c-heading-page {
+  color: $color-white;
+  text-transform: uppercase;
+  font-family: 'Intro', sans-serif;
+  @include font-weight(regular);
+  letter-spacing: 0.02em;
+  margin-bottom: $unit-large;
+}
+
+
+.c-title-page {
+  text-align: center;
+  margin-top: $unit-huge;
+  margin-bottom: $unit-huge;
+}
+
+  .c-subtitle-page {
+    position: relative;
+    @include font-size(26px);
+    color: $color-spun-pearl;
+    padding: $unit-large 0;
+    margin: 0;
+    &::before {
+      content: '';
+      background-image: url('/img/horizontal-bar.svg');
+      position: absolute;
+      width: 81px;
+      height: 13px;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    &::after {
+      content: '';
+      background-image: url('/img/horizontal-bar.svg');
+      position: absolute;
+      width: 81px;
+      height: 13px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+
+.c-heading-main {
+  @include font-size(40px);
+  @include font-weight(bold);
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  display: inline-block;
+}
+
+
+.c-heading-sub {
+  @include font-size(22px);
+  @include font-weight(medium);
+  margin-bottom: $unit/2;
+}
+
+
+.c-heading-section {}
+
+
+.c-heading-banner {}

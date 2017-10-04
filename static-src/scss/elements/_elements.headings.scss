@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+$inuit-font-size-h1: 58px;
+$inuit-font-size-h2: 26px;
+$inuit-font-size-h3: 22px;
+
+// Mixing to target all headings, h1-h6
+//
+// @include headings {
+//   font: 32px/42px trajan-pro-1, trajan-pro-2;
+// }
+@mixin headings {
+  h1, h2, h3,
+  h4, h5, h6 {
+    @content;
+  }
+}
+
+
+h1 {}
+
+
+h2 {}
+
+
+h3 {
+  padding-top: $unit;
+  @include font-weight(semibold);
+}

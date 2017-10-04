@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #POST
+   ========================================================================== */
+
+
+.c-post {
+}
+
+
+  .c-post__header {
+    text-align: center;
+    @include font-family(sans-serif);
+  }
+
+
+    .c-post__title {
+      @include font-size(30px);
+      @include font-weight(semibold);
+      color: $color-violet;
+    }
+
+
+    .c-post__meta {
+      margin-bottom: $unit;
+    }
+
+
+      .c-post__date {
+        text-transform: uppercase;
+        @include font-weight(medium);
+        @include font-size(16px);
+        @include mq($from: tablet) {
+          @include font-size(18px);
+        }
+        letter-spacing: 0.1em;
+      }
+
+      .c-post__tags {
+        text-transform: uppercase;
+        @include font-weight(semibold);
+        @include font-size(12px);
+        letter-spacing: 0.2em;
+      }

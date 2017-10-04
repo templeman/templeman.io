@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #BANDS
+   ========================================================================== */
+
+
+.c-band {
+  padding-top:    $unit-large;
+  padding-bottom: $unit-large;
+
+  // @include mq($from: tablet) {
+  //   padding-top:    $unit-large;
+  //   padding-bottom: $unit-large;
+  // }
+}
+
+
+.c-band--tint {
+  background-color: $color-white-lilac;
+}
+
+
+.c-band--large {
+  // padding: $spacing-unit--large;
+  padding-top:    $unit-huge;
+  padding-bottom: $unit-huge;
+}
+
+
+//
+// .band--highlight {
+//     background-color: $color-band-highlight-background;
+// }
+//
+// .band--tint {
+//     background-color: $color-band-tint-background;
+// }
+//
+// .band--dark {
+//     background-color: $color-band-dark-background;
+//     color: $color-band-dark;
+// }

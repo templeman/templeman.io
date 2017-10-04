@@ -1,0 +1,86 @@
+/* ==========================================================================
+   #PAGE-FOOT
+   ========================================================================== */
+
+.page-foot {
+  @include font-size(12px);
+  @include font-family(sans-serif);
+  @include font-weight(regular);
+  text-transform: uppercase;
+  border-top: 1px solid $color-violet;
+  color: $color-white-lilac;
+  background: $color-violet;
+  @include mq($from: tablet) {
+    background: $color-white-lilac;
+    color: $color-violet;
+  }
+  padding: $unit/2 0;
+  a {
+    color: $color-white-lilac;
+    @include mq($from: tablet) {
+      color: $color-violet;
+    }
+    &:hover {
+      border-bottom: 2px solid;
+    }
+  }
+}
+
+/*
+ * Note that due to the limitations of SASS we cannot extend the
+ * .u-hidden-visually class from within a media query. However, we can simply
+ * reference the original inuit mixin: inuit-hidden-visually.
+ */
+// .page-foot .o-grid__cell:first-child {
+//   @include mq($until: tablet) {
+//     @include inuit-hidden-visually();
+//   }
+// }
+
+.page-foot .o-grid__cell {
+  display: none;
+}
+
+.social {
+  @include mq($from: tablet) {
+    text-align: center;
+  }
+}
+
+.social__items--icons {
+  padding: $unit 0;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+}
+
+  .social__items--icons a {
+    border-bottom: none;
+  }
+
+.social__items--links {
+  display: inline-block;
+  ul {
+    text-align: center;
+    li {
+      &:not(:last-child) {
+        margin-right: $unit;
+      }
+      float: left;
+    }
+  }
+}
+
+.site-meta {
+  text-align: center;
+  @include mq($from: tablet) {
+    text-align: right;
+  }
+}
+
+  .site-meta__item:first-child  {
+    margin-right: $unit;
+  }

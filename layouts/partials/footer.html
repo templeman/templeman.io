@@ -1,0 +1,35 @@
+<footer class="page-foot">
+  <div class="o-wrapper  o-wrapper--large">
+    <div class="o-grid  o-grid--auto">
+      <div class="o-grid__cell  u-show@tablet">
+        <nav class="site-nav-foot">
+          <ul class="site-nav-foot__list">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+              <li class="site-nav-foot__item"><a class="site-nav-foot__link  {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </nav>
+      </div>
+      <div class="o-grid__cell  u-show@tablet">
+        <div class="social">
+          {{ if .Site.Social }}
+            {{ partial "social.html" . }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="o-grid__cell  u-show@mobile">
+        <div class="site-meta">
+          <span class="site-meta__item"><a href="{{ "colophon" | absURL }}">Colophon</a></span>
+          <span class="site-meta__item">
+            {{ with .Site.Params.copyright }}
+               © {{ . | markdownify }}
+            {{ else }}
+                © Copyright {{ now.Format "2006" }} {{ .Site.Params.name }}
+            {{ end }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

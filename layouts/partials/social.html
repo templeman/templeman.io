@@ -1,0 +1,11 @@
+<div class="social__items--links">
+  <ul class="o-list-bare">
+    {{ range $key, $val := .Site.Social }}
+      <li>
+        <a href="{{ $val }}">
+          {{ $key }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>

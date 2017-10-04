@@ -1,0 +1,72 @@
+/* ==========================================================================
+   #PROJECT
+   ========================================================================== */
+
+
+.c-project {
+  p {
+    @include font-size(18px);
+  }
+}
+
+
+.c-project--reverse {
+  @include mq($from: desktop) {
+    flex-direction: row-reverse;
+  }
+}
+
+
+.c-project__title {
+  @include font-size(30px, 1.4);
+  @include font-weight(semibold);
+  color: $color-violet;
+  margin-bottom: $unit/2;
+  text-align: center;
+  @include mq($from: desktop) {
+    text-align: left;
+  }
+}
+
+
+.c-project__category {
+  @include font-size(16px);
+  @include font-weight(semibold);
+  color: $color-maroon-flush;
+  text-transform: uppercase;
+  @include font-family(sans-serif);
+  margin-bottom: $unit;
+  text-align: center;
+  @include mq($from: desktop) {
+    text-align: left;
+  }
+}
+
+
+.c-project__image {
+  position: relative;
+  margin-bottom: $unit-large;
+  text-align: center;
+  // width: 800px;
+  // margin-left: -10%;
+  img {
+    display: inline-block;
+    // width: 1000px;
+    @include mq($from: desktop) {
+      max-width: none;
+    }
+  }
+}
+
+
+// .pendletonpsych .c-project__image {
+//   text-align: center;
+// }
+
+
+// .c-project__image--offset {
+//   img {
+//     position: absolute;
+//     right: -80%;
+//   }
+// }

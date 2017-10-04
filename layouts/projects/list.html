@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+  {{.Content}}
+  {{ range .Pages }}
+    {{ $.Scratch.Add "i" 1 }}
+    {{ $i := $.Scratch.Get "i" }}
+    {{ if modBool $i 2 }}
+      <div class="c-band  c-band--large">
+      {{ partial "project-right.html" . }}
+    {{ else }}
+      <div class="c-band  c-band--large  c-band--tint">
+      {{ partial "project-left.html" . }}
+    {{ end }}
+    </div>
+  {{ end }}
+{{ end }}

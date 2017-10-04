@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #ICON-MODULE
+   ========================================================================== */
+
+/**
+ * A component featuring an icon, heading, and short blurb.
+ */
+
+
+.c-icon-module {
+}
+
+
+.c-icon-module__title {
+  @include font-size(28px);
+  @include font-weight(semibold);
+  text-transform: uppercase;
+  color: $color-maroon-flush;
+}
+
+
+.c-icon-module__body {
+  @include font-size(18px);
+}

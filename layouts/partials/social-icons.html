@@ -1,0 +1,31 @@
+{{ if eq .Site.Params.iconFont "font-awesome" }}
+
+  {{ range $key, $val := .Site.Social }}
+    <a class="symbol" href="{{ $val }}">
+        <i class="fa fa-{{ $key }}"></i>
+    </a>
+  {{ end }}
+
+{{ else }}
+
+  <div class="social__items--icons  u-hide@tablet">
+    <ul class="o-list-bare">
+      <li>
+        <a class="symbol" href="#">
+          <img src="../img/social.svg#github" width="42.5" height="51.2" alt="">
+        </a>
+      </li>
+      <li>
+        <a class="symbol" href="#">
+          <img src="../img/social.svg#twitter" width="42.5" height="51.2" alt="">
+        </a>
+      </li>
+      <li>
+        <a class="symbol" href="#">
+          <img src="../img/social.svg#linkedin" width="42.5" height="51.2" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+{{ end }}

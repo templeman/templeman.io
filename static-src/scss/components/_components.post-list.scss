@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #POST-LIST
+   ========================================================================== */
+
+
+.c-post-list {
+}
+
+
+.c-post-list__item {
+}
+
+
+.c-post-list__date {
+  @include font-family(sans-serif);
+  @include font-size(12px, 1);
+  @include font-weight(semibold);
+  border-radius: $global-radius;
+  padding: 0.7em;
+  margin-right: $unit/2;
+  margin-bottom: $unit/4;
+  display: inline-block;
+  background-color: $color-white-lilac;
+  text-transform: uppercase;
+}
+
+
+.c-post-list__date--full {
+  min-width: 120px;
+}

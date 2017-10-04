@@ -1,0 +1,21 @@
+<div class="o-wrapper  o-wrapper--large  o-wrapper--full">
+  <div class="c-project  o-grid  o-grid--center  {{ .Params.class }}">
+    <div class="c-project__image  o-grid__cell  u-1/2@desktop">
+      {{ with .Params.image }}
+        <img src="/img/{{ . }}" alt="">
+      {{ end }}
+    </div>
+    <div class="o-grid__cell  u-1/2@desktop">
+      <div class="o-grid  o-grid--around">
+        <div class="o-grid__cell  u-4/5@desktop">
+          <h2 class="c-project__title">{{ .Title }}</h2>
+          <p class="c-project__category">{{ .Params.category }}</p>
+          {{ .Content }}
+          {{ with .Params.link }}
+            <a class="c-btn" href='{{ . }}'>Visit Live</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
