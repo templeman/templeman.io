@@ -79,3 +79,20 @@
 
 
 .c-heading-banner {}
+
+
+
+.spoon-icon {
+  position: relative;
+  &::after {
+    @include mq($from: wide) {
+      position: absolute;
+      top: -20px;
+      margin-left: 20px;
+      content: url(/img/icon-spoon.svg);
+      display: inline-block;
+      width: 18px;
+      height: 60px;
+    }
+  }
+}
