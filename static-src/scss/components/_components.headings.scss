@@ -61,6 +61,7 @@
 .c-heading-main {
   @include font-size(40px);
   @include font-weight(bold);
+  margin-bottom: $unit-large;
   text-transform: uppercase;
   border-bottom: 1px solid;
   display: inline-block;
