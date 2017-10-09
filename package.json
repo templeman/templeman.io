@@ -22,6 +22,7 @@
     "lint": "eslint static/js",
     "uglify": "echo '=> minify:js' && mkdir -p static/js && uglifyjs node_modules/jquery/dist/jquery.js node_modules/headroom.js/dist/headroom.js static-src/js/main.js -c -o static/js/app.min.js",
     "imagemin": "cp static-src/img/* static/img>/dev/null | true",
+    "favicon": "icon-gen -i static-src/img/logomark-dark.svg -o static -r",
     "prebuild:css": "npm run clean:css",
     "build:css": "npm run scss",
     "prebuild:js": "npm run clean:js",
@@ -34,7 +35,7 @@
     "watch:img": "onchange \"static-src/img\" -- npm run build:img",
     "watch:all": "npm-run-all -p watch:css watch:js watch:img",
     "development": "npm run build:all && npm run watch:all",
-    "production": "npm run autoprefixer"
+    "production": "npm run favicon && npm run autoprefixer"
   },
   "devDependencies": {
     "animate-sass": "git+https://github.com/tgdev/animate-sass.git",
@@ -44,6 +45,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^2.3.1",
     "headroom.js": "^0.9.4",
+    "icon-gen": "^1.1.5",
     "imagemin-cli": "^3.0.0",
     "inuit-displays": "^0.1.14",
     "inuit-flexgrid": "^0.3.0",

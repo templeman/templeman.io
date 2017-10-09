@@ -5,7 +5,6 @@
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ .Hugo.Generator }}
 <title>{{ .Title }}{{ if .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
-<link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}">
 <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/highlight.css" | absURL }}">
 {{ range .Site.Params.customCSS }}
