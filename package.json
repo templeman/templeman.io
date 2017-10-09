@@ -34,7 +34,7 @@
     "watch:js": "onchange \"static-src/js\" -- npm run build:js",
     "watch:img": "onchange \"static-src/img\" -- npm run build:img",
     "watch:all": "npm-run-all -p watch:css watch:js watch:img",
-    "development": "npm run build:all && npm run watch:all",
+    "dev": "npm run build:all && npm run watch:all",
     "production": "npm run favicon && npm run autoprefixer"
   },
   "devDependencies": {
