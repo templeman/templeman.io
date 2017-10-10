@@ -11,14 +11,15 @@ disqusShortname = "spf13"
 
 [params]
   name = "Sam Templeman"
-  description = "Describe your website"
-  bio = "Blogger & Programmer"
+  description = "Sam Templeman is a full-stack web designer in Portland, Oregon"
+  bio = "Full-stack web designer in Portland, Oregon."
   # Enter optionally your twitter account
   twitter = "@samueltempleman"
   enableRSS = true
 
-  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
-  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  # Integrate Javascript files or stylesheets by adding the url to the external
+  # assets or by linking local files with their path relative to the static
+  # folder, e.g. "css/styles.css"
   customCSS = []
   customJS  = []
 

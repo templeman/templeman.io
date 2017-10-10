@@ -11,4 +11,4 @@ participated in a number of branding projects. One of these involved a complete
 re-brand of local healthcare startup Scribes STAT. I created the new company
 logo, internally referred to as "Empathetic E", and honed a fresh set of brand
 colors. The company, renamed Essia Health as part of the rebrand, went on to be
-acquired by ScribeAmerica in 2015.
+acquired by ScribeAmerica.

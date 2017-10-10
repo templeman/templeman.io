@@ -5,6 +5,5 @@ subtitle = "Stuff I've written down so I don't forget. Maybe others will find it
 index = "true"
 +++
 
-I have written {{< num-posts >}} notes on this site. Find a reverse-chronological list of them here.
-
----
+I have written {{< num-posts >}} notes on this site. Find a
+reverse-chronological list of them here.

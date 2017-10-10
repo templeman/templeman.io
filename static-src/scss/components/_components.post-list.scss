@@ -3,6 +3,19 @@
    ========================================================================== */
 
 
+.c-post-list-intro {
+  position: relative;
+  border-bottom: 1px solid $color-violet;
+  margin-bottom: $unit-large;
+  .c-btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -34px;
+  }
+}
+
+
 .c-post-list {
 }
 

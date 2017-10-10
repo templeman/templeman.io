@@ -4,10 +4,10 @@ date = 2016-06-29T14:40:52-07:00
 tags = [ "GitHub", "open source" ]
 +++
 
-In the 1500's, an anonymous printer co-opted a body of text and scrambled it to
+In the 1500s, an anonymous printer co-opted a body of text and scrambled it to
 make a type specimen book. Eventually the passage that we now recognize as
-Lorem Ipsum grew into the de facto standard for filler text used by typesetters
-and designers the world over.
+[Lorem Ipsum](https://www.lipsum.com/) grew into the de facto standard for
+filler text used by typesetters and designers the world over.
 
 In the past decade, filler text has undergone somewhat of a renaissance. Back
 in 2011 we got [Bacon Ipsum](https://baconipsum.com/), which showed the world
@@ -23,7 +23,7 @@ favorite [place](http://www.maineripsum.com/),
 show](http://heisenbergipsum.com/).
 
 It's no surprise, then, that these lorem ipsum spin-offs come and go like the
-wind. Those who celebrated the lovingly-crafted Lebowski Ipsum will be saddened
+wind. Those who celebrated the lovingly crafted Lebowski Ipsum will be saddened
 to find it gone now, a for-sale sign in its place.
 
 Side-projects that they are, lorem ipsum spin-off sites spring up and fade out
@@ -39,7 +39,7 @@ Awesome Ipsum strives to maintain an up-to-date listing of lorem ipsum
 generators from around the web.
 
 The generators are broken up by kind, then further categorized with tags
-denoting any helpful features. Anyone is encouraged to peruse the list and
+denoting helpful features. Anyone is encouraged to peruse the list and
 contribute new generators, or help notify me of decommissioned sites. By
 soliciting help from the community, I hope to have a near-comprehensive list
 with a minimum of link-rot. I've already received a number of great suggestions

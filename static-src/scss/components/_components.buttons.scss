@@ -44,14 +44,14 @@ $btn-radius:          $global-radius;
   @include font-family(sans-serif);
   @include antialias();
 
-  @if($btn-border-width != 0) {
-    border: $btn-border-width $btn-border-style $btn-border-color;
-  } @else {
-    border: none; /* [4] */
-    @include attention() {
-      border: none; /* [4] */
-    }
-  }
+  // @if($btn-border-width != 0) {
+  //   border: $btn-border-width $btn-border-style $btn-border-color;
+  // } @else {
+  //   border: none; /* [4] */
+  //   @include attention() {
+  //     border: none; /* [4] */
+  //   }
+  // }
 
   @if($btn-radius != 0) {
     border-radius: $btn-radius;
@@ -97,7 +97,7 @@ $btn-radius:          $global-radius;
     will-change: transform;
   }
   &:hover span {
-    transform: translate3d(-1rem, 0, 0);
+    transform: translate3d(-1em, 0, 0);
   }
   svg {
     position: absolute;
@@ -116,7 +116,22 @@ $btn-radius:          $global-radius;
   }
   &:hover svg {
     opacity: 1;
-    right: -2rem;
+    right: -2em;
+  }
+  // &.c-btn--small:hover svg {
+  //   right: -em;
+  // }
+}
+
+$border-width: 15px;
+.c-btn--small {
+  text-transform: uppercase;
+  @include font-size(14px);
+  padding: $btn-padding--small/6 ($btn-padding); /* [7] */
+  border: $border-width solid $color-white;
+  border-radius: $border-width+3px;
+  @include attention() {
+    border: $border-width solid $color-white;
   }
 }
 
