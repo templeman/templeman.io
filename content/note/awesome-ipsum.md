@@ -38,10 +38,10 @@ Ipsum](https://github.com/templeman/awesome-ipsum). In keeping with the larger
 Awesome Ipsum strives to maintain an up-to-date listing of lorem ipsum
 generators from around the web.
 
-The generators are broken up amongst a few broad categories, then further
-categorized with tags denoting any helpful features. Anyone is encouraged to
-peruse the list and contribute new generators, or help notify me of
-decommissioned sites. By soliciting help from the community, I hope to have a
-near-comprehensive list with a minimum of link-rot. I've already had a number
-of great suggestions and useful pull requests. Give it a look and - if you
-fancy revisiting it later - a star as well.
+The generators are broken up by kind, then further categorized with tags
+denoting any helpful features. Anyone is encouraged to peruse the list and
+contribute new generators, or help notify me of decommissioned sites. By
+soliciting help from the community, I hope to have a near-comprehensive list
+with a minimum of link-rot. I've already received a number of great suggestions
+and useful pull requests. Give it a look and - if you fancy revisiting it later
+- a star as well.

@@ -6,14 +6,16 @@
       <div class="c-post__meta">
         <time class="c-post__date">{{ .Date.Format "January 2, 2006" }}</time>
         <br>
-        <span class="c-post__tags">{{ with .Params.tags }}
-        {{ if ge (len .) 1 }}
-          {{ range . }}
-              <a class="c-post__tag" href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>&nbsp;&nbsp;/&nbsp;
-          {{ end }}
-        {{ end }}
-        {{ end}}
-        </span>
+        <p class="c-post__tags">
+          {{ with .Params.tags }}
+            {{ if ge (len .) 1 }}
+              {{ range . }}
+                <a class="c-post__tag" href="{{ printf "tags/%s" (. | urlize) | absURL }}">{{ . }}</a>
+                <span class="c-post__tag-separator">/</span>
+              {{ end }}
+            {{ end }}
+          {{ end}}
+        </p>
       </div>
     </header>
     <hr>

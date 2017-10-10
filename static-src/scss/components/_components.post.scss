@@ -27,17 +27,27 @@
 
       .c-post__date {
         text-transform: uppercase;
+        letter-spacing: 0.1em;
         @include font-weight(medium);
         @include font-size(16px);
         @include mq($from: tablet) {
           @include font-size(18px);
         }
-        letter-spacing: 0.1em;
       }
+
 
       .c-post__tags {
         text-transform: uppercase;
         @include font-weight(semibold);
         @include font-size(12px);
         letter-spacing: 0.2em;
+      }
+
+
+      .c-post__tag-separator {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        &:last-child {
+          display: none;
+        }
       }
