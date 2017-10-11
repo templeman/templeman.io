@@ -35,7 +35,7 @@
     "watch:img": "onchange \"static-src/img\" -- npm run build:img",
     "watch:all": "npm-run-all -p watch:css watch:js watch:img",
     "dev": "npm run build:all && npm run watch:all",
-    "production": "npm run favicon && npm run autoprefixer"
+    "production": "npm run autoprefixer"
   },
   "devDependencies": {
     "animate-sass": "git+https://github.com/tgdev/animate-sass.git",

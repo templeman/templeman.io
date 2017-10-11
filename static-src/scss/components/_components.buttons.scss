@@ -43,6 +43,10 @@ $btn-radius:          $global-radius;
   @include font-weight(semibold);
   @include font-family(sans-serif);
   @include antialias();
+  @include attention() {
+    border: none; /* [4] */
+
+  }
 
   // @if($btn-border-width != 0) {
   //   border: $btn-border-width $btn-border-style $btn-border-color;

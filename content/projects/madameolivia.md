@@ -9,7 +9,7 @@ class: "madameolivia"
 
 An older project, I began working on Madame Olivia in 2010 while studying at
 the Art Institute of Portland. I partnered with a local writer to create an
-application that would dynamically serve up “fortunes” - horoscope-like
+application that would dynamically serve up “fortunes” – horoscope-like
 passages tailored to each recipient. I designed the look and feel of the site
 to compliment the Madame Olivia personality and voice. I also wrote the
 algorithm for composing readings based on individual criteria as well as the
