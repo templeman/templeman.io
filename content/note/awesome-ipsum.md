@@ -33,7 +33,7 @@ up as outdated lists full of link-rot.
 
 In a (perhaps futile) attempt to solve this problem, and more selfishly, as a
 means of getting my feet wet in open source collaboration, I created [Awesome
-Ipsum](https://github.com/templeman/awesome-ipsum). In keeping with the larger
+Ipsum](https://github.com/templeman/awesome-ipsum). In keeping with the greater
 [awesome list](https://github.com/sindresorhus/awesome) trend on GitHub,
 Awesome Ipsum strives to maintain an up-to-date listing of lorem ipsum
 generators from around the web.
