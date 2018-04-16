@@ -12,7 +12,7 @@ filler text used by typesetters and designers the world over.
 In the past decade, filler text has undergone somewhat of a renaissance. Back
 in 2011 we got [Bacon Ipsum](https://baconipsum.com/), which showed the world
 what filler text could be. Other variations quickly followed. Today we have
-gone from one venerable standard to literally hundreds of cheeky filler text
+gone from one venerable standard to hundreds of cheeky filler text
 flavors featuring everything from [zombies](http://www.zombieipsum.com/) to
 [Nietzsche](http://nietzsche-ipsum.com/). In fact, anyone with a clever idea
 and some basic programming skills can create an ipsum of their own, to the
