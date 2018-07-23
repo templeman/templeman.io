@@ -1,0 +1,8 @@
+#!/bin/sh
+USER=templeman
+HOST=templeman.io
+DIR=/var/www/templeman.io/public/   # might sometimes be empty!
+
+hugo && rsync -avz --delete public/ ${USER}@${HOST}:${DIR}
+
+exit 0
