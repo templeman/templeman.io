@@ -2,7 +2,6 @@
 title: "Qualcomm Contest Microsite"
 date: 2017-10-03T13:41:01-07:00
 category: "Web development"
-link: "https://developforai.com"
 image: "qualcomm-developforai.png"
 offset: true
 class: "developforai"
