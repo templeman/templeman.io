@@ -48,7 +48,7 @@
     "icon-gen": "^1.1.5",
     "imagemin-cli": "^3.0.0",
     "inuit-displays": "^0.1.14",
-    "inuit-flexgrid": "^0.3.0",
+    "inuit-flexgrid": "^0.4.0",
     "inuitcss": "^6.0.0-beta.5",
     "jquery": "^3.4.1",
     "node-sass": "^4.12.0",
