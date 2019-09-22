@@ -317,6 +317,7 @@ $inuit-offsets: true;
   font-style: normal;
 }
 
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "icons";
   font-style: normal;
@@ -329,6 +330,8 @@ $inuit-offsets: true;
   text-transform: none;
   line-height: 1em;
 }
+
+
 .icon-facebook:before { content: '\e802'; }
 .icon-facebook-squared:before { content: '\e800'; }
 .icon-twitter:before { content: '\e801'; }
@@ -336,6 +339,7 @@ $inuit-offsets: true;
 .icon-facebook-circled:before { content: '\e805'; }
 .icon-twitter-circled:before { content: '\e806'; }
 .icon-facebook-rect:before { content: '\e803'; }
+
 
 /* Spacing */
 // .post h1, h3, h4, h5, p, .post-body ul, pre {
