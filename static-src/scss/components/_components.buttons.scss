@@ -71,6 +71,7 @@ $btn-radius:          $global-radius;
 
 }
 
+
 .btn {
     // @include font-weight(bold);
     // @include vendor(transition, 0.2s);
@@ -81,6 +82,7 @@ $btn-radius:          $global-radius;
     // }
 
 }
+
 
 .c-btn--secondary {
     background: none;
@@ -127,6 +129,7 @@ $btn-radius:          $global-radius;
   // }
 }
 
+
 $border-width: 15px;
 .c-btn--small {
   text-transform: uppercase;
@@ -139,6 +142,7 @@ $border-width: 15px;
   }
 }
 
+
 // .btn--positive {
 //     @include font-weight(regular);
 //
@@ -148,6 +152,7 @@ $border-width: 15px;
 //     }
 //
 // }
+
 
 //.btn--negative {
 //    @include font-weight(regular);
