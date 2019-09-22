@@ -26,6 +26,7 @@
   }
 }
 
+
 /*
  * Note that due to the limitations of SASS we cannot extend the
  * .u-hidden-visually class from within a media query. However, we can simply
@@ -37,15 +38,18 @@
 //   }
 // }
 
+
 .page-foot .o-grid__cell {
   display: none;
 }
+
 
 .social {
   @include mq($from: tablet) {
     text-align: center;
   }
 }
+
 
 .social__items--icons {
   padding: $unit 0;
@@ -74,12 +78,14 @@
   }
 }
 
+
 .site-meta {
   text-align: center;
   @include mq($from: tablet) {
     text-align: right;
   }
 }
+
 
   .site-meta__item:first-child  {
     margin-right: $unit;
