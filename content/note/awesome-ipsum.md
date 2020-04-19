@@ -19,7 +19,7 @@ and some basic programming skills can create an ipsum of their own, to the
 point where it has become a kind of "Hello World" exercise for developers
 wanting to experiment with Markov chains while giving a shout out to their
 favorite [place](http://www.maineripsum.com/),
-[celebrity](http://www.jbipsum.com/), or [television
+[celebrity](https://www.bobrosslipsum.com/), or [television
 show](http://heisenbergipsum.com/).
 
 It's no surprise, then, that these lorem ipsum spin-offs come and go like the
@@ -43,5 +43,4 @@ denoting helpful features. Anyone is encouraged to peruse the list and
 contribute new generators, or help notify me of decommissioned sites. By
 soliciting help from the community, I hope to have a near-comprehensive list
 with a minimum of link-rot. I've already received a number of great suggestions
-and useful pull requests. Give it a look and - if you fancy revisiting it later
-- a star as well.
+and useful pull requests. Give it a look and - if you fancy revisiting it later - a star as well.
