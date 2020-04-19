@@ -5,7 +5,7 @@
     <li class="c-post-list__item">
       <time class="u-hide  u-display-inline-block@tablet  c-post-list__date  c-post-list__date--full">{{ .Date.Format "January 2" }}</time>
       <time class="u-hide@tablet  c-post-list__date  c-post-list__date--short">{{ .Date.Format "01.02" }}</time>
-      <a href='{{ .URL }}'>{{ .LinkTitle }}</a>
+      <a href='{{ .Permalink }}'>{{ .LinkTitle }}</a>
     </li>
   {{ end }}
 </ul>
