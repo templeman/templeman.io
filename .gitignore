@@ -4,3 +4,4 @@ node_modules
 public/
 themes/hugo-creative-portfolio-theme/
 themes/minimal/
+.hugo_build.lock
