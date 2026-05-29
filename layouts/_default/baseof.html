@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ .Site.Language.Locale | default "en" }}">
   <head>
     {{ partial "head.html" . }}
   </head>
@@ -8,7 +8,7 @@
       <!-- {{ block "profile" . }}{{ end }} -->
     {{ block "main" . -}}{{- end }}
     {{ partial "call-to-action.html" . }}
-    {{ if .Site.Social }}
+    {{ if .Site.Params.social }}
       {{ partial "social-icons.html" . }}
     {{ end }}
     {{ partial "footer.html" . }}

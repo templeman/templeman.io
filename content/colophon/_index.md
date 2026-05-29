@@ -1,7 +1,7 @@
 +++
 title = "Colophon"
 date  = "2017-08-01T11:35:59-07:00"
-type  = "index"
+type  = "colophon"
 subtitle = "The stuff with which this site was built."
 +++
 

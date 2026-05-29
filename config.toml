@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://templeman.io/"
 themesDir = "themes"
-languageCode = "en-us"
+locale = "en-us"
 title = "Templeman Creative"
 theme = "cactus"
 # Enter your tracking code to enable Google Analytics
@@ -66,7 +66,7 @@ disqusShortname = "spf13"
 
 
 # Add additional social link entries underneath
-[social]
+[params.social]
     github   = "https://github.com/templeman"
     twitter  = "https://twitter.com/samueltempleman"
     linkedin = "https://www.linkedin.com/in/samtempleman/"

@@ -1,6 +1,6 @@
 {{ if eq .Site.Params.iconFont "font-awesome" }}
 
-  {{ range $key, $val := .Site.Social }}
+  {{ range $key, $val := .Site.Params.social }}
     <a class="symbol" href="{{ $val }}">
         <i class="fa fa-{{ $key }}"></i>
     </a>
