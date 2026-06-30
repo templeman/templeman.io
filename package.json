@@ -18,7 +18,7 @@
     "clean:img": "rm -rf static/img/*",
     "clean:js": "rm -rf static/js/*",
     "autoprefixer": "postcss -u autoprefixer -r static/css/*.css",
-    "scss": "node-sass --source-map true --output-style compressed -o static/css static-src/scss",
+    "scss": "sass --style=compressed --load-path=. static-src/scss:static/css",
     "lint": "eslint static/js",
     "uglify": "echo '=> minify:js' && mkdir -p static/js && uglifyjs node_modules/jquery/dist/jquery.js node_modules/headroom.js/dist/headroom.js static-src/js/main.js -c -o static/js/app.min.js",
     "imagemin": "cp static-src/img/* static/img>/dev/null | true",
