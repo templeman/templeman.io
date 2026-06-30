@@ -41,7 +41,7 @@
     "autoprefixer": "^10.4.2",
     "eslint": "^10.6.0",
     "headroom.js": "^0.12.0",
-    "icon-gen": "^3.0.0",
+    "icon-gen": "^5.0.0",
     "imagemin-cli": "^8.0.0",
     "inuit-displays": "^0.1.14",
     "inuit-flexgrid": "^0.4.0",
